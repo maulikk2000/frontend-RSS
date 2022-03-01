@@ -1,0 +1,141 @@
+body {
+    font-family: $font-family;
+    font-size: $eli-font-size;
+    font-weight: normal;
+    line-height: 16px;
+    color: $eli-font-color;
+}
+
+h1 {
+    font-family: $header-font-family;
+    font-size: 24px;
+    position: relative;
+    margin-top: 8px;
+    margin-bottom: 24px;
+    line-height: $eli-header-line-height;
+    color: $eli-navy;
+    text-transform: capitalize;
+    z-index: 2;
+    font-weight:normal;
+    letter-spacing: -1px;
+}
+
+h2 {
+    font-family: $header-font-family;
+    font-weight: $font-weight-medium;//500
+    font-size: $eli-h2-size;//18px
+    line-height: $eli-header-line-height;//20px
+    color: $eli-navy;
+}
+
+h3 {
+    font-family: $header-font-family;
+    font-weight: $font-weight-medium;//500
+    font-size: $eli-h3-size;//16px
+    line-height: $eli-header-line-height;//20px
+    color: $eli-navy;
+}
+
+p {
+    font-family: $font-family;
+    line-height: 20px;
+}
+
+p.lowlight {
+    color: #72818D;
+}
+
+label {
+    font-family: $font-family;
+    font-weight: $font-weight-medium;//500
+    font-size: $eli-font-size;//14px
+    line-height: $eli-header-line-height;//20px
+}
+
+label.small {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+label.stepIndicator {
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+}
+
+label.imageSelector {
+    font-weight: $font-weight-medium;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+label.error {
+    color: $eli-tag-color-rejected;
+}
+
+.toolTipFont {
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 16px;
+}
+
+.dashbord-X-Large {
+    font-family: $font-family;
+    font-size: $eli-dash-fontsize-xLarge;//36px
+    font-weight: normal;
+    line-height: 40px;
+    letter-spacing: -2;
+    position: relative;
+
+    sup {
+        font-size: 14px;
+        line-height: 20px;
+        font-family: $font-family;
+        font-weight: normal;
+        position:absolute;
+        top:-6px;
+    }
+}
+
+.dashbord-Large {
+    font-family: $font-family;
+    font-size: $eli-dash-fontsize-large;//24px
+    font-weight: normal;
+    line-height: 32px;
+    position: relative;
+
+    sup {
+        font-size: 10px;
+        line-height: 12px;
+        font-family: $font-family;
+        font-weight: normal;
+        position:absolute;
+        top:0px;
+    }
+}
+
+.dashbord-label {
+    font-family: $font-family;
+    font-size: $eli-dash-fontsize-label;//16px
+    font-weight: normal;
+    line-height: 18.75px;
+}
+
+.dashbord-label-heavy {
+    font-family: $font-family;
+    font-size: $eli-dash-fontsize-label;//16px
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.dashboard-label-lowlight {
+    font-family: $font-family;
+    color:#8B9DAC;
+    font-size: $eli-font-size;
+    font-weight: normal;
+}
+
+input, span, button {
+    font-family: $font-family;
+}

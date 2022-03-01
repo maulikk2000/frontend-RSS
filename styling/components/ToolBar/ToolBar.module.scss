@@ -1,0 +1,26 @@
+@import "styling/_variables";
+
+.wrapper {
+    position: absolute;
+    bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    width: 153px;
+
+    background-color: rgba($eli-black, 0.9);
+    height: 56px;
+    display: flex;
+    align-items: center;
+    border-radius: 16px;
+
+    .section {
+        padding:0px 8px;
+        display: flex;
+
+        &:not(:first-child) {
+            border-left: solid 1px $eli-utility-hover; 
+        }
+    }
+}

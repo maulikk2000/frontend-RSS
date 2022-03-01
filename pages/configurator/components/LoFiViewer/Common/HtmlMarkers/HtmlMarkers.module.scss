@@ -1,0 +1,49 @@
+@import "styling/_variables";
+
+.container {
+    background: white;
+    border: solid 1px white;
+    opacity: 0.7;
+    transform: translate(0px 30px);
+
+    .inner {
+        margin: 1px;
+        font-size: 16px;
+        border: solid 2px $eli-podium-blue;
+        padding: 4px;
+        padding-left: 8px;
+        padding-right: 8px;
+        text-align: center;
+    }
+
+    &.secondary {
+        background: #150f0f;
+        border-radius: 24px;
+        border: none; //2px solid #21B8C7;
+        
+        .inner {
+            padding:2px;
+            padding-left: 8px;
+            padding-right: 8px;
+            border-radius: 8px;
+            border: none;
+            color: white;
+        }
+    }
+
+    &.label {
+        opacity: 0.8;
+        background: #1C252C;
+        border: solid 1.5px $eli-podium-blue;
+        border-radius: 24px;
+        
+        .inner {
+            padding:2px;
+            padding-left: 16px;
+            padding-right: 16px;
+            border-radius: 8px;
+            border: none;
+            color: white;
+        }
+    }
+}

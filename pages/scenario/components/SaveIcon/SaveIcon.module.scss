@@ -1,0 +1,51 @@
+@import "../../../../styling/variables";
+
+.saveIcon {
+    height: 100px;
+    width: 100px;
+    
+    display: flex;
+    
+    button {
+        cursor: pointer;
+        border: none;
+        background-color: $eli-podium-dark-teal;
+        border-radius: 8px;
+        color: white;
+        width: 100%;
+        padding: 12px 12px;
+
+        &:focus {
+            outline: none;
+        }
+
+        .icon {
+            margin-bottom: 5px;
+        }
+
+        p {
+            margin: 0;
+            line-height: 130%;
+        }
+
+        svg {
+            width: 24px;
+            height: 24px;
+            path {
+                fill: white;
+            }
+        }
+
+        
+        &:hover {
+            background: $eli-podium-yellow;
+            color: black;
+            
+            svg {
+                path {
+                    fill: black;
+                }
+            }
+        }
+    }
+}

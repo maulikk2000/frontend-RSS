@@ -1,0 +1,85 @@
+@import "styling/_variables";
+
+// TODO:
+// Fix Up Variables
+.step_card {
+    padding-top: 20px;
+    font-size: 14px;
+
+    &:first-child {
+        padding-top:0;
+    }
+
+    .step_icon {
+        color: rgb(18, 11, 49);
+        font-size: 13px;
+        border: 2px solid rgb(192, 205, 217);
+        height: 18px;
+        border-radius: 50%;
+        width: 18px;
+        line-height: 18px;
+        text-align: center;
+        margin-bottom: 8px;
+        box-sizing: content-box;
+    }
+
+    .step_icon_completed {
+        font-size: 14px;
+        border: 2px solid;
+        height: 18px;
+        border-radius: 50%;
+        width: 18px;
+        line-height: 18px;
+        text-align: center;
+        margin-bottom: 8px;
+        background: $eli-podium-blue;
+        border-color: $eli-podium-blue;
+        color: white;
+        box-sizing: content-box;
+
+        svg {
+            margin: 0;
+            padding: 0;
+            height: 15px;
+            position: relative;
+            top: 2px;
+            width: 0.8em;
+        }
+    }
+
+
+
+    .step_content {
+        background: white;
+        border-radius: 5px;
+        box-shadow: 0 0 7px #cecece;
+        padding: 20px;
+
+        h4 {
+            color: rgb(18, 11, 49);
+            font-size: 18px;
+            height: 20px;
+            line-height: 20px;
+            font-weight: 500;
+            margin: 0;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            box-sizing: content-box;
+        }
+
+        h5 {
+            color: rgb(119, 119, 119);
+            font-size: 14px;
+            font-weight: normal;
+            line-height: 20px;
+            margin: 0;
+            margin-bottom: 10px;
+            padding: 0;
+            width: 75%;
+        }
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

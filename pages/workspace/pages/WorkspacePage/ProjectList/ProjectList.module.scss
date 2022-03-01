@@ -1,0 +1,71 @@
+@import "../../../../../styling/variables";
+
+.container {
+    height: 100%;
+    max-height: 100%;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 388px;
+    max-width: 338px;
+    background: #f8f8fb;
+
+    h4 {
+        color: #72818d;
+        font-weight: 400;
+        margin-top: 10px;
+        margin-bottom: 12px;
+    }
+
+    .backButton {
+        margin-bottom: 12px;
+    }
+
+    .header {
+        padding: 24px 24px 0;
+    }
+
+    .content {
+        height: 100%;
+        max-height: 100%;
+        overflow-y: hidden;
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        padding: 0px 24px;
+
+        .loading {
+            margin: 24px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: auto;
+            
+        }
+
+        .list {
+            overflow-y: scroll;
+            align-self: stretch;
+            padding:0;
+
+            &::-webkit-scrollbar {
+                background: transparent;
+                width: 0;
+            }
+        }      
+
+        
+    }
+
+    .btnWrapper {
+        padding: 24px;
+        margin-top: auto;
+        text-align: center;
+
+        .addIcon {
+            height: 14px;
+            margin-right: 12px;
+        }
+    }
+}

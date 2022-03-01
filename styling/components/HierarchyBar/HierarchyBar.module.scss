@@ -1,0 +1,53 @@
+@import "styling/_variables";
+
+.bar {
+  border: solid 1px $eli-light-blue;
+  border-radius: 4px;
+  padding: 4px;
+  line-height: 26px;
+  font-size: 14px;
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: row;
+
+  .area {
+    white-space: nowrap;
+    padding-left: 0;
+  }
+
+  &.secondary {
+      .title {
+          border-left: solid 3.5px #dfb1b5;
+      }
+  }
+
+  &.primary {
+      .title {
+          border-left: solid 3.5px rgb(35, 180, 195);
+      }
+  }
+
+  &.selected {
+      background: #23b4c36b;
+  }
+
+  .title {
+      padding-left: 14px;
+      font-weight: 500;
+      flex: 1;
+      position: relative;
+  }
+
+  span {
+      font-weight: 400;
+      flex: 0;
+      padding: 2px;
+      padding-left: 14px;
+
+      svg {
+          color: black;
+          height: 18px;
+          vertical-align: middle;
+      }
+  }
+}

@@ -1,0 +1,357 @@
+@import "../../styling/variables";
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    background: $eli-utility-light;
+    padding: 0 110px 48px;
+    overflow-y: scroll;
+
+    .eliLabHeader {
+        padding: $padding;
+        background: $white;
+        border-radius: 8px;
+        display: flex;
+
+        h1 {
+            margin-top: 0;
+        }
+
+        .headerText {
+            padding-right: $padding;
+            width: 70%;
+        }
+
+        .headerImg {
+            flex: auto;
+            display: flex;
+            justify-content: right;
+            align-content: flex-end;
+
+            img {
+                align-self: flex-end;
+                height: 100%;
+            }
+        }
+    }
+
+    .searchSection {
+        padding: $padding 0;
+        display: flex;
+        justify-content: space-between;
+
+        input.search {
+            border-radius: 100px;
+            padding: $half-padding;
+            border: 1px solid $eli-utility-dark;
+            outline: none;
+            background: $white;
+            width: 20%;
+        }
+
+        .filtersubmit {
+            position: relative;
+            z-index: 1;
+            left: -75px;
+            top: 1px;
+            color: #7b7b7b;
+            cursor: pointer;
+            width: 0;
+        }
+
+        .droplist {
+            width: 15%;
+            border: 1px solid $eli-utility-dark;
+            padding: $half-padding;
+            border-radius: 4px;
+            box-sizing: content-box;
+        }
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+        grid-gap: $padding;
+
+        div.container {
+            // height: 260px;
+            // width: 464px;
+            background: $white;
+            border-radius: 8px;
+            display: flex;
+            cursor: pointer;
+
+            div.imgContainer {
+                flex: 152px;
+                padding: 24px;
+
+                img {
+                    background: rgba(230, 235, 240, 0.3);
+                    height: 208px;
+                    width: 152px;
+                    //margin: 27px 291px 25px 21px;
+                    // margin-top: 27px;
+                    // margin-bottom: 25px;
+                    // margin-left: 21px;
+                    // float: left;
+                }
+            }
+
+            a:link a:hover {
+                text-decoration: none;
+            }
+
+            .featureText {
+                flex: auto;
+                padding: 24px 24px 24px 0;
+                //display:flex;
+                // flex-direction: row;
+
+                height: 100%;
+                //justify-content: space-between;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                text-decoration: none;
+
+                h3 {
+                    margin-top: 0;
+                }
+
+                .tagDetails {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-end;
+                }
+
+                button {
+                    border: 2px solid $eli-podium-blue;
+                    background: rgb(230, 235, 240);
+                    font-size: 10px;
+                    font-weight: bold;
+                    border-radius: 20px;
+                    margin-right: 12px;
+                    outline: none;
+                    color: $eli-navy;
+
+                    &:hover {
+                        background: white;
+                        border: 2px solid $eli-podium-yellow;
+                        transition: all ease-in 0.5s;
+                    }
+                }
+            }
+        }
+    }
+
+    .addFeature {
+        input textarea {
+            padding: $half-padding;
+            border: 1px solid $eli-utility-dark;
+            outline: none;
+            background: $white;
+            width: 20%;
+            margin-bottom: 20px;
+
+            &:focus {
+                background: white;
+                border: 2px solid $eli-podium-blue;
+                transition: all ease-in 0.5s;
+
+                ~ label {
+                    top: -12px;
+                }
+            }
+        }
+    }
+
+    .inner-container {
+        padding: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .sub-header {
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 7px;
+        }
+        .draggable-container {
+            min-width: 40em;
+            max-width: 45em;
+            min-height: 20em;
+            max-height: 18em;
+            background-color: rgba(147, 148, 148, 0.23);
+            padding: 6px;
+            border-radius: 4px;
+            border: 2px dashed rgba(95, 92, 92, 0.2);
+            font-size: 14px;
+            display: flex;
+            margin-bottom: 7px;
+            position: relative;
+            overflow: hidden;
+            #file-browser-input {
+                width: 100%;
+                height: 100%;
+                top: 0px;
+                left: 0px;
+                position: absolute;
+                color: transparent;
+                opacity: 0;
+            }
+            .files-preview-container {
+                display: flex;
+                width: 100%;
+                height: fit-content;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                z-index: 99;
+                overflow-x: auto;
+                overflow-y: hidden;
+                flex-shrink: 0;
+                padding: 5px;
+                .file {
+                    width: 5em;
+                    height: 58px;
+                    background-color: rgba(101, 97, 97, 0.34);
+                    position: relative;
+                    margin-left: 8px;
+                    border: 1px solid #fff;
+                    border-radius: 4px;
+                    box-shadow: 0px 0px 14px 3px rgba(15, 15, 15, 0.2);
+                    flex-shrink: 0;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                    .container {
+                        display: flex;
+                        position: absolute;
+                        flex-direction: column;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        padding: 0;
+                        transition: background, 160ms ease-in-out;
+                        &:hover {
+                            background-color: rgba(154, 151, 151, 0.29);
+                            .remove-btn {
+                                visibility: visible;
+                            }
+                        }
+                        .remove-btn {
+                            color: #ca4240;
+                            width: fit-content;
+                            position: absolute;
+                            right: -7px;
+                            top: -7px;
+                            z-index: 99;
+                            cursor: pointer;
+                            visibility: hidden;
+                        }
+                        .progress-bar {
+                            position: absolute;
+                            width: 53px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            display: flex;
+                            align-self: center;
+                        }
+                    }
+                }
+            }
+            .helper-text {
+                position: absolute;
+                display: flex;
+                justify-self: center;
+                align-self: center;
+                left: 50%;
+                transform: translateX(-50%);
+                color: #797676;
+            }
+            .file-browser-container {
+                position: absolute;
+                display: flex;
+                justify-self: center;
+                align-self: center;
+                bottom: 8px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+
+    .footer-container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    //Scroll BAR
+    .ip-scrollbar::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        background-color: #fff;
+    }
+
+    .ip-scrollbar::-webkit-scrollbar {
+        width: 10px;
+        background-color: #42576b;
+        height: 5px;
+    }
+
+    .ip-scrollbar::-webkit-scrollbar-thumb {
+        background-color: #42576b;
+        /* border-radius: 4px; */
+        /* background-image: -webkit-linear-gradient(0deg, rgba(255, 255, 255, 0.5) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.5) 75%, transparent 75%, transparent); */
+    }
+
+    .boxadvancedupload {
+        font-size: 1.25rem;
+        background: #e6ebf0; // rgb(230, 235, 240);
+
+        position: relative;
+        padding: 30px 20px;
+        // outline: 2px dashed #92b0b3;
+        outline-offset: -10px;
+        -webkit-transition: outline-offset 0.15s ease-in-out, background-color 0.15s linear;
+        transition: outline-offset 0.15s ease-in-out, background-color 0.15s linear;
+
+        &:hover {
+            background-color: #c8dadf;
+        }
+
+        .boxuploadinput {
+            flex: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .boxIcon {
+            width: 100%;
+            height: 30px;
+            fill: #92b0b3;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .boxLabel {
+            font-size: 14px;
+            font-weight: normal;
+            height: 14px;
+            line-height: 14px;
+            color: rgb(34, 34, 34);
+        }
+    }
+
+    .boxdragndrop,
+    .boxuploading,
+    .boxsuccess,
+    .boxerror {
+        display: none;
+    }
+}

@@ -1,0 +1,43 @@
+@import "styling/_variables";
+
+.base {
+    font-family:"CircularStd-Medium", Arial, Verdana, Tahoma, sans-serif;
+    margin-top:20px;
+    margin-bottom:26px;
+    position: relative;
+    line-height: 20px;
+    font-weight:normal;
+    color: #120b31;
+    text-transform: capitalize;
+    letter-spacing: -1px;
+}
+
+.H1 {
+    margin-bottom:26px;
+    font-size: 24px;
+
+    &:before {
+        content: "";
+        border-bottom: 4px solid $eli-podium-blue;
+        border-left: 24px solid $eli-podium-blue;
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+    }
+}
+
+.H2 {
+    font-size: 22px;
+}
+
+.H3 {
+    font-size: 20px;
+}
+
+.H4 {
+    font-size: 18px;
+}
+
+.H5 {
+    font-size: 16px;
+}

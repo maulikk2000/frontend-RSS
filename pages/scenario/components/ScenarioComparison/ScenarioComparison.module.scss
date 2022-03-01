@@ -1,0 +1,178 @@
+@import "../../../../styling/variables";
+
+@mixin cell {
+    padding: 12px;
+    position: relative;
+    border-top: 1px solid #e6ebf0;
+    background: #fafbfc;
+    border-left: 1px solid #e6ebf0;
+}
+
+.scenarioComparison {
+    background: #f8f8fb;
+    height: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 24px 48px;
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+
+        .headingWithButton {
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+            gap: 24px;
+            justify-content: space-between;
+
+            h1.compHeader {
+                position: relative;
+                margin: 0;
+                span {
+                    letter-spacing: normal;
+                    position: absolute;
+                    top: -20px;
+                    letter-spacing: 1;
+                    font-size: 14px;
+                    line-height: 18px;
+                    font-weight: 400;
+                    color: #72818d;
+                }
+            }
+        }
+    }
+
+    .mainContent {
+        flex: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        overflow: auto;
+        min-width: 1024px;
+
+        .selectorRow {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(256px, 1fr));
+            padding: 0 24px;
+
+            .dropCell,
+            .dropCellLast {
+                @include cell();
+            }
+
+            .dropCellFirst {
+                @include cell();
+                border-top-left-radius: 8px;
+            }
+
+            .dropCellLast::after {
+                content: "";
+                width: 24px;
+                background: #fafbfc;
+                height: 100%;
+                border-top-right-radius: 8px;
+                border-top: 1px solid #e6ebf0;
+                border-right: 1px solid #e6ebf0;
+                position: absolute;
+                right: -24px;
+                top: -1px;
+            }
+        }
+
+        .comparisonDataWrapper {
+            height: 100%;
+            max-height: 100%;
+            overflow-y: scroll;
+            flex: auto;
+            padding: 0 24px 24px;
+            background: #fff;
+
+            &::-webkit-scrollbar {
+                background: transparent;
+                width: 0;
+            }
+
+            .cell,
+            .headerCell {
+                border-bottom: 1px solid #e6ebf0;
+                height: 44px;
+                max-height: 44px;
+                display: flex;
+                width: 100%;
+                align-items: center;
+            }
+
+            .cell {
+                padding: 8px;
+            }
+
+            .headerCell {
+                padding: 8px 8px 8px 0px;
+            }
+
+            .sectionRow {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                width: 100%;
+                max-width: 100%;
+                box-sizing: border-box;
+                background: #fff;
+                padding: 0;
+                gap: 0;
+
+                & > div {
+                    border-left: 1px solid #e6ebf0;
+
+                    &:first-child {
+                        border-left: none;
+                    }
+                }
+
+                .sectionCol {
+                    div:first-child {
+                        height: 80px;
+                        max-height: 80px;
+                        border-bottom: 1px solid #c0cdd9;
+                    }
+
+                    div:last-child {
+                        border-bottom: none;
+                    }
+                }
+
+                .comparisonCol {
+                    display: grid;
+                    gap: 0px;
+                    grid-template-columns: repeat(3, 1fr);
+                    box-sizing: border-box;
+                    word-break: break-all;
+                    position: relative;
+
+                    .loading {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    .col {
+                        div:first-child {
+                            height: 80px;
+                            max-height: 80px;
+                            align-items: flex-end;
+                            color: #72818d;
+                            border-bottom: 1px solid #c0cdd9;
+                        }
+
+                        div:last-child {
+                            border-bottom: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

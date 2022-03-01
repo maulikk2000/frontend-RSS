@@ -1,0 +1,39 @@
+//Global mixins to go here
+@import "../styling/variables";
+
+@mixin mapCard {
+    border-radius: 16px;
+    padding: 24px;
+    background: $white;
+    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.2);
+
+    h1, h2 {
+        margin-top: 0;
+    }
+}
+
+@mixin mapCardHeading {
+    .heading {
+        display: flex;
+        justify-content: space-between;
+
+        .closeButton {
+            padding: 0;
+            height: 24px;
+            &:hover {
+                background-color: transparent;
+            }
+        }
+
+        h1 {
+            margin-top: 0;
+        }
+    }    
+}
+
+@mixin mapCardBtnWrapper {
+    .btnWrapper {
+        display: flex;
+        gap: 12px;
+    }
+}

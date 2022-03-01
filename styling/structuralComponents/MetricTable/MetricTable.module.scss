@@ -1,0 +1,64 @@
+@import "styling/_variables";
+
+// TODO:
+// Fix Up Variables
+.metric_table {
+    border:0;
+    font-size:14px;
+    line-height: 35px;
+    border-spacing:0;
+    margin:0;
+    padding:0;
+    border-collapse: collapse;
+    width:100%;
+
+    &.clickable {
+        cursor:pointer;
+
+        tr {
+          &:hover {
+            background:  $eli-light-blue;
+          }
+        }
+    }
+
+    th:first-child {
+        text-align: left;
+    }
+
+    th {
+        font-weight: 400;
+        text-align: center;
+        color: #828282;
+        font-size: 13px;
+        border-bottom:solid 1.5px black;
+    }
+      
+    tr, td {
+        padding:0;
+        margin:0;
+        border-spacing:0;
+    }
+
+    td {
+        text-align: center;
+    }
+
+    td:first-child {
+        font-weight:bold;
+        text-align: left;
+    }
+    
+    &.has_total {
+        tr:last-child {
+            &:hover {
+                background: unset;
+            }
+
+            td {
+                padding-top:7px;
+                border-top:solid 2px black;
+            }  
+        }
+    }
+}

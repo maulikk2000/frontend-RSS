@@ -1,0 +1,45 @@
+@import "src/styling/variables";
+
+.wrapper {
+    display: flex;
+
+    > div:first-child {
+        border-left: none;
+    }
+
+    .crumbWrapper {
+        border-left: 1px solid $eli-utility-dark;
+        padding: 0 24px;
+    }
+
+    .noBorder {
+        border-left: none;
+    }
+
+    h4 {
+        margin: 0;
+    }
+
+    .crumbValue {
+        color: $white;
+        margin: 0;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: $eli-dash-fontsize-label;
+        line-height: 1.5;
+    }
+
+    .link {
+        @extend .crumbValue;
+
+        &:hover {
+            color: $eli-podium-blue;
+            cursor: pointer;
+        }
+    }
+
+    .noLink {
+        @extend .crumbValue;
+        cursor: text;
+    }
+}

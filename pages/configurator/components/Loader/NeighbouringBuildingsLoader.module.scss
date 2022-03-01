@@ -1,0 +1,39 @@
+.toast {
+    position: absolute;
+    bottom: 12px;
+    text-align: center;
+    width: 100%;
+    z-index: 10000;
+  
+    .inner {
+      padding:8px;
+      width:320px;
+      margin:auto;
+      background: white;
+      border-radius: 2px;
+  
+      .error {
+        cursor: pointer;
+      }
+  
+      div {
+        &>div {
+          width: 8px;
+          height: 8px;
+        }
+      }
+  
+      .close {
+        float: right;
+        position: relative;
+        top: -44px;
+        cursor: pointer;
+        height: 0;
+      }
+  
+      small {
+        display:block;
+        padding-bottom: 8px;
+      }
+    }
+  }

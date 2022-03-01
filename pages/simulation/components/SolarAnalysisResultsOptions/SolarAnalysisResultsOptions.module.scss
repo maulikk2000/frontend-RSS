@@ -1,0 +1,67 @@
+@import "styling/_variables";
+
+.container {
+    padding: 0px 24px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    h1 {
+        margin-bottom: 32px;
+    }
+}
+
+.cards {
+    flex: 1;
+}
+
+.card {
+    background: #FCFCFC;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 12px;
+
+    h2 {
+        height: 18px;
+        margin-bottom: 0px;
+    }
+
+    .description {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: #72818D;
+        margin-bottom: 20px;
+        margin-top: 8px;
+    }
+    
+}
+
+.cardToggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .toggle {
+        position: relative;
+        right: 12px;
+    }
+}
+
+.legend {
+    margin-bottom: 24px;
+    .colourBar {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 24px;
+        height: 16px;
+        background: linear-gradient(to right, #4C62AD, #6395D0, #7DBDE0, #FFDB7D, #F3AF48, #CB670E);
+    }
+
+    .labels {
+        margin-top: 8px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+    }
+}

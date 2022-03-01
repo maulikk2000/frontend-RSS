@@ -1,0 +1,121 @@
+@import "styling/_variables";
+
+.dropdownItem {
+  margin: 1px;
+  text-align: center;
+
+  &.selected {
+    .dropdownSelections {
+      &.docked {
+        bottom: 79px;
+        max-height: unset;
+
+        div {
+          white-space: normal;
+        }
+      }
+    }
+  }
+
+  .toolItem {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid transparent;
+    padding-bottom: 2px;
+
+    &.docked {
+      .dropdownExpand {
+        width: 100%;
+        height: 18px;
+
+        svg {
+          width: 0.8em;
+          height: 0.8em;
+        }
+      }
+    }
+
+    .toolIcon {
+      display: block;
+      height: 24px;
+      width: 24px;
+      margin: auto;
+      margin-bottom: 8px;
+
+      svg {
+        color: white;
+        fill: #8b9dac;
+      }
+    }
+
+    .toolTitle {
+      white-space: nowrap;
+      font-size: 12px;
+    }
+
+    .dropdownExpand {
+      width: 100%;
+      height: 21px;
+      margin-top: -2px;
+    }
+
+    &.selected {
+      position: relative;
+      background: #1c252c;
+      opacity: 0.95;
+      border: 1px solid #4b545b;
+      box-sizing: border-box;
+      box-shadow: 0px 20px 100px rgba(28, 37, 44, 0.05);
+      border-radius: 0 0 8px 8px;
+      padding-bottom: 2px;
+
+      svg {
+        fill: $eli-podium-blue;
+      }
+
+      .toolTitle {
+        color: $eli-podium-blue;
+      }
+    }
+
+    &:hover {
+      &:not(.selected) {
+        background: #00000026;
+        border-radius: 8px;
+
+        svg {
+          fill: $eli-podium-blue;
+        }
+
+        .toolTitle {
+          color: $eli-podium-blue;
+        }
+      }
+    }
+  }
+
+  .dropdownSelections {
+    background: #1c252ce6;
+    position: absolute;
+    bottom: 95px;
+    border-radius: 8px 8px 0 0;
+
+    &.docked {
+      bottom: 79px;
+    }
+
+    & > div {
+      border: solid 1px transparent !important;
+      width: 100%;
+    }
+
+    div {
+      border-radius: 0 !important;
+      white-space: unset;
+
+      &:first-child {
+        border-radius: 8px 8px 0 0 !important;
+      }
+    }
+  }
+}

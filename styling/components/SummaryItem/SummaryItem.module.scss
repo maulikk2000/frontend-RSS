@@ -1,0 +1,29 @@
+@import "styling/_variables";
+
+.summary_item {
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+
+    .summary_name {
+      align-self: center;
+      flex-grow: 1;
+      margin-left: 0;
+      padding-left: 0;
+      font-size: 14px;
+      line-height: 21px;
+      font-weight: 500;
+      text-transform: capitalize;
+      margin-left: 0;
+    }
+
+    .summary_value {
+      text-align: right;
+      flex-grow: 1;
+      font-size: 13px;
+    }
+    
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }

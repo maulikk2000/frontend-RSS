@@ -1,0 +1,35 @@
+@import "styling/_variables";
+
+.checkbox {
+    &> span {
+        // Important because it needs to override MUI CSS
+        color: $eli-podium-dark-teal !important;
+        width: 13.2px;
+        height: 13.2px;
+        border-radius: unset;
+        padding: 0;
+        
+
+        svg {
+            width: 1.1em;
+            height: 1.1em;
+        }
+
+        &:hover {
+            // Important because it needs to override MUI CSS
+            background: rgba($eli-podium-dark-teal, 0.2) !important;
+        }
+    }
+
+    &.disabled {
+        &> span {
+            // Important because it needs to override MUI CSS
+            color: rgba($eli-podium-dark-teal, 0.3) !important;
+        }
+    }
+
+    label {
+        margin-left: 8px;
+        font-weight: normal;
+    }
+}

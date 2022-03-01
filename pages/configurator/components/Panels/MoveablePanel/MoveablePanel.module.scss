@@ -1,0 +1,100 @@
+@import "styling/_variables";
+
+.moveablePanel {
+  position: absolute;
+  height: 110px;
+  border-radius: 8px;
+  background: #1c252ce6;
+  bottom: 60px;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  z-index: 1000;
+  user-select: none;
+  display: none;
+
+  .panelItems {
+    padding: 18px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 24px;
+  }
+
+  .leftIconColumn {
+    max-width: 35px;
+    display: flex;
+    border-right: 1px solid #4b545b;
+    flex-direction: column;
+    color: #8b9dac;
+    background: #1c252c;
+    border-radius: 8px 0 0 8px;
+
+    svg {
+      color: $eli-podium-blue;
+    }
+
+    .icon {
+      font-size: 12px;
+      padding: 6px;
+      padding-top: 8px;
+      height: 100%;
+      display: flex;
+      flex: 1 1;
+      align-items: center;
+      cursor: grab;
+      align-self: center;
+      fill: #c0cdd9;
+      flex-direction: column;
+      justify-content: center;
+
+      svg {
+        width: 100%;
+      }
+
+      svg.hideMapIcon {
+        margin-top: -1px;
+        path {
+          fill: $eli-podium-blue;
+        }
+      }
+    }
+  }
+
+  &.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  &.docked {
+    width: 100%;
+    bottom: 0px;
+    height: 80px;
+    border-radius: 0;
+    left: 0;
+
+    .panelItems {
+      div {
+        flex-direction: row;
+        align-items: center;
+        max-height: 78px;
+      }
+    }
+
+    .leftIconColumn {
+      max-width: 72px;
+      min-width: 72px;
+      flex-direction: row;
+      border-radius: 0;
+
+      strong {
+        border-right: 1px solid #4b545b;
+      }
+
+      .icons {
+        width: 30px;
+      }
+    }
+  }
+}

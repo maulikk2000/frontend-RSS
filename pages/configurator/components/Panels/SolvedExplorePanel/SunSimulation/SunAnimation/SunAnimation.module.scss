@@ -1,0 +1,41 @@
+
+  @import "styling/_variables";
+
+.timeOfDay {
+  span {
+    color: white;
+  }
+
+  .toolModal {
+    display: inline-block;
+    vertical-align: middle;
+    position: fixed;
+    background: #1c252ce6;
+    bottom: 103px;
+    border-radius: 8px;
+    border: 1px solid #4b545b;
+
+    &.animation {
+      margin-left: -100px;
+      display: flex;
+      align-items: center;
+
+      .playPauseAnimation {
+        cursor: pointer;
+        border-right: solid 1px #4b545b;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        align-items: center;
+        align-items: center;
+        min-width: 69px;
+      }
+    }
+  }
+}
+
+.timeAnimationText {
+  padding: 12px;
+}

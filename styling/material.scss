@@ -1,0 +1,82 @@
+@import "_variables";
+
+/* Sun Simulation Calendar Picker */
+.MuiInputBase-root.MuiInput-root.MuiInput-underline.MuiInputBase-formControl.MuiInput-formControl.MuiInputBase-adornedEnd {
+  border-radius: 50px;
+  border: solid 1.5px $eli-podium-blue;
+  padding: 19px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: bold;
+
+  input {
+    width: 100px;
+  }
+
+  .MuiIconButton-root {
+    padding: 5px;
+  }
+
+  &:before,
+  &:after {
+    display: none;
+  }
+
+  .MuiSvgIcon-root {
+    font-size: 2rem;
+
+    fill: #333;
+  }
+}
+
+/* Sliders on Configurator Page */
+span.MuiSlider-thumb.MuiSlider-thumbColorPrimary {
+  background: $eli-podium-blue;
+}
+
+span.MuiSlider-root.MuiSlider-colorPrimary.MuiSlider-marked {
+  color: $eli-podium-blue;
+}
+
+span.MuiSlider-root.MuiSlider-colorPrimary.MuiSlider-marked span.MuiSlider-rail {
+  background: #c0cdd9;
+}
+
+span.MuiSlider-root.MuiSlider-colorPrimary span.MuiSlider-rail {
+  background: #c0cdd9;
+}
+
+span.MuiSlider-root.MuiSlider-colorPrimary.MuiSlider-marked span.MuiSlider-mark.MuiSlider-markActive {
+  display: none;
+}
+
+span.MuiSlider-root.MuiSlider-colorPrimary.MuiSlider-marked span.MuiSlider-mark {
+  display: none;
+}
+
+span.MuiSlider-root.MuiSlider-colorPrimary {
+  color: $eli-podium-blue;
+}
+
+span.MuiSlider-mark {
+  display: none;
+}
+
+span.MuiSlider-thumb.MuiSlider-thumbColorPrimary.Mui-disabled {
+  background: #c0cdd9;
+}
+
+span.MuiSlider-root.Mui-disabled {
+  color: #c0cdd9 !important;
+}
+
+.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #c0cdd9 !important;
+}
+
+/*------------------------------------------
+                  Selector
+-------------------------------------------*/
+.MuiInputBase-root.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: black;
+}

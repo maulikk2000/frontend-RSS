@@ -1,0 +1,61 @@
+<svg width="40px" height="46px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40.4 40.5">
+  <defs>
+    <style>
+      .a {
+        fill: #3cb971;
+      }
+
+      .a, .b, .c, .d, .e, .f {
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .a, .d {
+        stroke-width: 0.43px;
+      }
+
+      .b, .f {
+        fill: #fff;
+      }
+
+      .b, .c {
+        stroke-width: 0.6px;
+      }
+
+      .c {
+        fill: #bba6ed;
+      }
+
+      .d {
+        fill: #8cc63f;
+      }
+
+      .e {
+        fill: #ddd;
+        stroke-width: 0.41px;
+      }
+
+      .f {
+        stroke-width: 0.35px;
+      }
+    </style>
+  </defs>
+  <g>
+    <path class="a" d="M131.6,170.5h-2.1v-7.4c.7-.5,2.5-.2,4.2-2.5,3.6-5.2,4.8-8.6,7.6-8.6s3.9,3.8,8.3,7.2,5.8,4.1,15.3,4.7h4.6v6.5H133.9" transform="translate(-129.3 -130.3)"/>
+    <path class="b" d="M166.3,153.3v16.3a.9.9,0,0,1-.9.9H150a.9.9,0,0,1-.8-.9V144.7a.9.9,0,0,1,.8-.9h15.4a.9.9,0,0,1,.9.9v5.9" transform="translate(-129.3 -130.3)"/>
+    <line class="c" x1="37" y1="22.1" x2="37" y2="22.3"/>
+    <line class="d" x1="3.8" y1="40.2" x2="3.6" y2="40.2"/>
+    <rect class="e" x="23.2" y="17.3" width="3.6" height="3.56"/>
+    <rect class="e" x="29.9" y="17.3" width="3.6" height="3.56"/>
+    <rect class="e" x="23.2" y="24.2" width="3.6" height="3.56"/>
+    <rect class="e" x="29.9" y="24.2" width="3.6" height="3.56"/>
+    <rect class="e" x="23.2" y="30.9" width="3.6" height="3.56"/>
+    <rect class="e" x="29.9" y="30.9" width="3.6" height="3.56"/>
+    <path class="a" d="M154.9,135.8a5.3,5.3,0,0,0-5.3-5.3,5.3,5.3,0,0,0-5.3,5.3c0,4.4,5.3,10.6,5.3,10.6S154.9,140.2,154.9,135.8Z" transform="translate(-129.3 -130.3)"/>
+    <g>
+      <path class="f" d="M151.7,139.1a3.9,3.9,0,0,1-2.1.6,4,4,0,0,1-4.1-4,4.1,4.1,0,0,1,8.1,0,4.3,4.3,0,0,1-1,2.7" transform="translate(-129.3 -130.3)"/>
+      <path d="M149.1,136.1c.1.3.2.4.5.4s.4-.1.4-.3-.1-.3-.5-.4-.8-.4-.8-.8.4-.6.8-.6.9.3.9.6h-.5c0-.1-.1-.3-.4-.3s-.3.1-.3.3.1.2.5.4.7.3.7.7-.3.7-.9.7a.8.8,0,0,1-.9-.7Zm.2-1.6v-.4h.4v.4Zm.1,2.6v-.5h.3v.5Z" transform="translate(-129.3 -130.3)"/>
+    </g>
+  </g>
+</svg>

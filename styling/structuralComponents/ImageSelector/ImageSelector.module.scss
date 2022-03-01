@@ -1,0 +1,234 @@
+@import "styling/_variables";
+
+// TODO:
+// Fix Up Variables
+.hovered {
+
+    .image {
+        background: #23b4c347;
+        border: solid 1.5px $eli-podium-blue;
+        cursor:unset;
+    }
+    .blank_image {
+        background: #23b4c347;
+        border: solid 1.5px $eli-podium-blue;
+        cursor:unset;
+
+        
+    }
+    .image_selector {
+        cursor:unset;
+
+        span {
+            background:#23b4c347;
+        }
+
+        svg {
+            fill: $eli-podium-blue;
+        }
+
+        .short {
+            padding:5px;
+        }
+    }
+    
+}
+
+.component {
+    flex: 2 2;
+
+    &.modal_tall {
+        min-width:102px;
+        max-width:102px;
+    }
+}
+
+.image_selector {
+    text-align: center;
+    font-weight: 500;
+    flex: 1;
+    margin: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.image_selector_disabled {
+    text-align: center;
+    font-weight: 500;
+    flex: 1;
+    margin: 5px;
+    margin-bottom: 10px;
+    opacity: 0.5;
+
+    &>div {
+        background: $eli-utility-dark;
+
+        span {
+            background: #333;
+        }
+
+        svg {
+            fill: #333;
+        }
+
+        &:hover {
+            background: $eli-utility-dark;
+            border-color:$eli-utility-dark;
+            svg {
+                fill: #333;
+            }
+
+            span {
+                background: #333;
+            }
+        }
+    }
+}
+
+.image {
+    background: white;
+    border: solid 1.5px rgb(192, 205, 217);
+    border-radius: 4px;
+    height: 92px;
+    width: 100%;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    padding:20px;
+
+    svg {
+        width: inherit;
+        height: -webkit-fill-available;
+        color: $eli-podium-blue;
+        fill: $eli-utility-dark;
+    }
+
+    &:hover {
+        background: #23b4c347;
+        border: solid 1.5px $eli-podium-blue;
+
+        svg {
+            fill: $eli-podium-blue;
+        }
+    }
+
+    &:hover span {
+        background: #23b4c347;
+    }
+}
+
+.blank_image {
+    border: 1.5px solid $eli-utility-dark;
+    background: white;
+    border-radius: 4px;
+    height: 92px;
+    width: 100%;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+
+    &:hover {
+        background: #23b4c347;
+        border: solid 1.5px $eli-podium-blue;
+    }
+
+    &:hover span {
+        background: #23b4c347;
+    }
+}
+
+.blank_image_selected {
+    background: white;
+    border: solid 1.5px $eli-podium-blue;
+    border-radius: 4px;
+    height: 92px;
+    width: 100%;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+
+    span {
+        background: $eli-podium-blue !important;
+    }
+
+    svg {
+        fill:$eli-podium-blue;
+    }
+
+    &:hover {
+        background: #23b4c347;
+        border: solid 1.5px $eli-podium-blue;
+    }
+
+    &:hover span {
+        background: #23b4c347;
+    }
+}
+
+.text_image {
+    color:white;
+    font-size: 25px;
+    font-weight:400;
+    padding: unset !important;
+    
+    span {
+        border-radius:50%;
+        background: $eli-utility-dark;
+        display:block;
+        width:55px;
+        height:55px;
+        margin:auto;
+        margin-top:18.5px;
+        line-height: 54px;
+    }
+}
+
+.tall {
+    height: 92px;
+}
+
+.short {
+    height: 67px;
+
+    &.text_image {        
+        span {
+            width: 35px;
+            height: 35px;
+            margin-top: 14px;
+            line-height: 35px;
+        }
+    }
+
+    padding:7px;
+
+    .image {
+        padding:10px;
+    }
+}
+
+.checked {
+    font-size: 13px;
+    border: 2px solid $eli-utility-dark;
+    height: 13px;
+    border-radius: 50%;
+    width: 13px;
+    line-height: 13px;
+    text-align: center;
+    align-self: center;
+    background: $eli-podium-blue;
+    border-color: $eli-podium-blue;
+    color: white;
+    display: block;
+    margin-right: 4px;
+    box-sizing: content-box;
+    position: relative;
+    bottom: -20px;
+    margin-top: -16px;
+    float: right;
+
+    svg {
+        margin: 0;
+        padding: 0;
+        height: 13px;
+        position: relative;
+        top: 0px;
+        margin-left: -5px;
+    }
+}

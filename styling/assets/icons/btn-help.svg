@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 61.2 (101010) - https://sketch.com -->
+    <title>3856F74D-AF85-4C4A-BCDD-E17A1BAA8A9F@1.00x</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="HEADER" transform="translate(-1383.000000, -40.000000)">
+            <g transform="translate(0.000000, -1.000000)" id="Button/help">
+                <g transform="translate(1383.720011, 41.680000)">
+                    <g>
+                        <rect id="Rectangle" fill="#120B31" x="0" y="0" width="43" height="43" rx="4"></rect>
+                        <text id="?" font-family="HelveticaNeue, Helvetica Neue" font-size="28" font-weight="normal" fill="#FFFFFF">
+                            <tspan x="13.6818182" y="31.5113636">?</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

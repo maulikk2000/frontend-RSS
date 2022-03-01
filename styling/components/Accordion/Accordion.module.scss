@@ -1,0 +1,193 @@
+@import "../../variables";
+
+/*----------------------------------
+    General Accordion Styles
+------------------------------------*/
+.accordion {
+    width: 100%;
+    padding: 0;
+
+    h2 {
+        margin: 0;
+        font-size: $eli-h2-size;
+    }
+
+    .rightHeader {
+        display: flex;
+        justify-content: space-between;
+        min-width: 200px;
+        margin: 0;
+        font-weight: normal;
+    }
+}
+
+.accordion.open {
+    .icon {
+        svg {
+            color: $eli-podium-blue;
+        }
+    }
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    .leftHeader {
+        flex: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .checkAndClearIcons {
+        padding: 0 4px;
+
+        &:hover {
+            svg {
+                path {
+                    fill: red;
+                }
+            }
+        }
+    }
+
+    .icon {
+        width: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+}
+
+/*----------------------------------
+    Block Accordion Styles
+------------------------------------*/
+
+.block {
+    background: $white;
+    border-radius: $box-border-radius;
+    margin-bottom: $margin;
+
+    .header {
+        padding: $half-padding $padding;
+    }
+
+    .content {
+        background: $white;
+        padding: 0px $padding $padding;
+        border-radius: $box-border-radius;
+    }
+}
+
+.block.open {
+    box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+    .header {
+        padding-top: $padding;
+    }
+}
+
+/*----------------------------------
+    Flat Accordion Styles
+------------------------------------*/
+
+.flat {
+    background: none;
+    border-top: 1px solid $eli-utility-dark;
+
+    .header {
+        padding: $half-padding 0px;
+        position: relative;
+
+        .icon {
+            //below is necessary only becase we're using mui icons
+            position: absolute;
+            right: -5px;
+        }
+    }
+
+    .rightWrapper {
+        text-align: right;
+        padding-right: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        box-sizing: border-box;
+
+        .rightHeader {
+            min-width: 0;
+        }
+    }
+}
+
+.flat.lastItem {
+    border-bottom: 1px solid $eli-utility-dark;
+}
+
+.flat.open {
+    border-top: 1px solid $eli-podium-blue;
+    border-bottom: 1px solid $eli-podium-blue;
+
+    .header {
+        cursor: default;
+
+        .icon {
+            //below is necessary only becase we're using mui icons
+            position: absolute;
+            right: -5px;
+            cursor: pointer;
+        }
+    }
+
+    .lastItem {
+        border-bottom: 1px solid $eli-podium-blue;
+    }
+}
+
+.flat.open + div {
+    border-top: 1px solid transparent;
+}
+
+/*----------------------------------
+    Table Accordion Styles
+------------------------------------*/
+
+.table {
+    border-bottom: 1px solid $eli-utility-dark;
+    position: relative;
+
+    .header {
+        padding: $half-padding 0px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        justify-content: space-between;
+        cursor: pointer;
+        height: 80px;
+
+        .icon {
+            //below is necessary only becase we're using mui icons
+            position: absolute;
+            right: -5px;
+        }
+    }
+
+    .iconAbsolute {
+        position: absolute;
+        right: -5px;
+        top: 28px;
+        cursor: pointer;
+        z-index: 1000;
+        
+        svg {
+            path {
+                fill: $eli-podium-blue;
+            }
+        }
+    }
+}
+.table.open {
+    border-bottom: 1px solid $eli-podium-blue;
+}

@@ -1,0 +1,24 @@
+@import "../../../../../styling/variables";
+
+.mapboxPopup {
+    background: transparent;
+
+    &:hover,
+    &.isHovered {
+        cursor: pointer;
+
+        h3 {
+            color: $eli-podium-dark-teal;
+        }
+    }
+
+    .popUpItem {
+        background: transparent;
+        display: flex;
+        gap: 10px;
+
+        h3 {
+            margin: 0;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+@import "styling/_variables";
+
+.wrapper {
+    button {
+        padding: 0px;
+        margin: 0px;
+        height: 40px;
+        width: 40px;
+        border: none;
+        border-radius: 8px;
+        background-color: transparent;
+        cursor: pointer;
+    
+        svg {
+            width:24px;
+            height: 24px;
+            vertical-align: middle;
+            fill: $eli-utility-hover;   
+            cursor: pointer;
+        }
+    
+        &:hover {
+            &:not(.disabled){
+                background-color: $eli-black;
+            }
+        }
+    
+        &.active {
+            background-color: $eli-black;
+            svg {
+                fill: $eli-podium-blue;
+            }
+        }
+
+        &.disabled {
+            svg {
+                cursor: default;
+                fill: $eli-overlay-color;
+            }
+        }
+    
+    }    
+}

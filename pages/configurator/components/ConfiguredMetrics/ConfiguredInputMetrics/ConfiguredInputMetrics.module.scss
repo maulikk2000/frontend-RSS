@@ -1,0 +1,56 @@
+.container {
+    display: flex;
+    margin-bottom: 5px;
+
+    .left {
+        flex-grow: 1;
+        align-self: center;
+        line-height: 21px;
+        font-weight: 500;
+        text-transform: capitalize;
+        white-space: nowrap;
+    }
+
+    .right {
+        display: flex;
+
+        button {
+            cursor: pointer;
+            display: inline-block;
+            border: 1px solid #C0CDD9;
+            background: unset;
+
+            &:hover {
+                border-color:  #a4b4c4
+            }
+
+            &:focus {
+                outline: unset;
+            }
+
+            &.incrementer {
+                border-left: 0;
+                border-radius: 0px 4px 4px 0px;
+            }
+            &.decrementer {
+                border-right: 0;
+                border-radius: 4px 0px 0px 4px;
+            }
+        }
+
+        input {
+            display: inline-block;
+            width: 60px;
+            border: 1px solid #C0CDD9;
+            font-size: 12px;
+            
+            &:hover {
+                border-color:  #a4b4c4
+            }
+            
+            &:focus {
+                outline: unset; 
+            }
+        }
+    }
+}

@@ -1,0 +1,35 @@
+@import "styling/_variables";
+
+.headerColumn {
+  display: flex;
+
+  .headerContent {
+    color: #8b9dac;
+    width: 150px;
+
+    h2 {
+      color: white;
+      margin-bottom: 12px;
+    }
+
+    h4 {
+      margin: 0;
+      display: inline-block;
+      color: #8b9dac;
+      font-weight: normal;
+    }
+  }
+
+  &.docked {
+    .headerContent {
+      width: min-content;
+
+      h2 {
+        white-space: pre-wrap;
+        max-width: min-content;
+        margin: 0;
+        line-height:30px;
+      }
+    }
+  }
+}

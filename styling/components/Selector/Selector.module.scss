@@ -1,0 +1,67 @@
+@import "styling/_variables";
+
+.form_control {
+    flex: 1;
+    width:100%;
+
+    .MuiSelect-outlined.MuiSelect-outlined {
+        padding-top: 12.5px;
+        padding-bottom: 12.5px;
+    }
+
+    fieldset {
+        border: 2px solid #c0cdd9;
+
+        &.Mui-focused {
+            border-color: black;
+        }
+    }
+
+    .select_wrapper {
+        margin-bottom: 3px;
+        position: relative;
+        padding-top: 2px;
+
+        .icon {
+            position: absolute;
+            font-size: 26px;
+            margin-left: -34px;
+            margin-top: 8px;
+            pointer-events: none;
+        }
+
+        &>div {
+            border-color:black;
+            width:100%;
+        }
+    }
+}
+
+
+.select_input {
+    border-color:black;
+
+    div {
+        padding-top: 12.5px;
+        padding-bottom: 12.5px;
+    }
+
+    svg {
+        color: transparent;
+    }
+
+    em {
+        font-style: unset;
+        font-weight: 500;
+    }
+
+    &>div {
+        padding-left:12px;
+        border-color:black;
+
+        &:focus {
+            background: none;
+            border-color:black;
+        }
+    }
+}

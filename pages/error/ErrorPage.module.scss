@@ -1,0 +1,47 @@
+@import "../../styling/variables";
+
+.ErrorPage {
+    padding: 20px;
+
+    div {
+        padding-top: $low-padding;
+    }
+    .redirectHome {
+        padding: $half-padding 0 0 0;
+        width: 150px;
+
+        a {
+            border: 1px solid $eli-utility-dark;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            padding: 8px;
+            background: $white;
+            border-radius: 4px;
+            flex-wrap: wrap;
+            color: inherit;
+
+            &:link,
+            &:visited {
+                text-decoration: none;
+            }
+
+            &:hover {
+                border: 1px solid $eli-podium-blue;
+                box-shadow: 0px 0px 0 1px $eli-podium-blue;
+                background: rgba($color: $eli-podium-blue, $alpha: 0.05);
+                cursor: pointer;
+                text-decoration: none;
+            }
+            &:active {
+                text-decoration: none;
+            }
+        }
+    }
+
+    .urlPath {
+        font-weight: $font-weight-medium;
+        font-style: italic;
+    }
+}

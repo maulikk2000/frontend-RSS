@@ -1,0 +1,10 @@
+.buttons {
+    position: absolute;
+    z-index: 1500;
+    top: 24px;
+    right: 20px;
+
+    &>div {
+        margin-bottom: 12px;
+    }
+  }

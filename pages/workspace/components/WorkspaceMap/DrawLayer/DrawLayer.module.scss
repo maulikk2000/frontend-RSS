@@ -1,0 +1,21 @@
+@import "../../../../../styling/variables";
+
+.container {
+    &.draw {
+        svg {
+            cursor: crosshair;
+        }
+    }
+
+    &.edit {
+        g {
+            cursor: crosshair;
+        }
+        path[data-type="feature"] {
+            cursor: pointer;
+        }
+        path[data-type="fill"] {
+            cursor: move;
+        }
+    }
+}

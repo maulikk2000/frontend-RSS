@@ -1,0 +1,2 @@
+Code in this folder was copy pasted from `grpc-demo` project at: https://bitbucket.org/Not_A-Hotdog/grpc-demo/src/master/
+All files were copy-pasted from the `ClientApp/src` directory. Only relevant code in `index.js` was extracted.

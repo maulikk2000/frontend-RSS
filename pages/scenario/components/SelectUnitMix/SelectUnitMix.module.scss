@@ -1,0 +1,13 @@
+.selectUnitMix {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .unavailable {
+        text-align: center;
+    }
+}
+
+.slider {
+    width: 100%;
+}

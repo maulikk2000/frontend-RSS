@@ -1,0 +1,122 @@
+@import "styling/_variables";
+
+// DESIGN GUIDELINES BUTTONS
+@import "../../variables";
+
+@mixin ctaBaseButton {
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    cursor: pointer;
+    color: $eli-navy;
+    font-size: 12px;
+    border-radius: 16px;
+    padding: 4px 20px;
+}
+
+@mixin ctaButtonHover {
+    background: $eli-semi-light-red;
+    border: 2px solid $eli-semi-light-red;
+}
+
+@mixin ctaButtonDisabled {
+    background: $eli-utility-dark;
+    border: 2px solid $eli-utility-dark;
+    color: $white;
+
+    &:hover {
+        cursor: default;
+    }
+}
+
+.wrapper.primary {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+
+    .primary {
+        @include ctaBaseButton;
+    
+        background: $eli-semi-light-blue;
+        border: 2px solid $eli-semi-light-blue;
+    
+        &.selected {
+            background: $eli-semi-light-red;
+            border: 2px solid $eli-semi-light-red;
+        }
+    
+        &:hover {
+            @include ctaButtonHover();
+        }
+    
+        &:disabled {
+            @include ctaButtonDisabled;
+        }
+    }
+    
+}
+
+.wrapper.row {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+
+    .row {
+        height: 36px;
+        outline: none;
+        border: 1px solid $eli-utility-dark;
+        padding: 0 24px;
+        background: transparent;
+
+        &:first-child {
+            border-top-left-radius: 100px;
+            border-bottom-left-radius: 100px;
+            border-right: none;
+        }
+
+        &:last-child {
+            border-top-right-radius: 100px;
+            border-bottom-right-radius: 100px;
+            border-left: none;
+        }
+
+        &:hover {
+            background: $eli-utility-light;
+        }
+
+        &.selected {
+            background: $eli-podium-blue;
+            border: 1px solid $eli-podium-blue;
+        }
+    }
+}
+
+.wrapper.secondary {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+
+    .secondary {
+        width: 30px;
+        height: 30px;
+        outline: none;
+        border: 1px solid $eli-utility-dark;
+        background: transparent;
+        border-radius: 50%;
+
+        &:hover {
+            background: $eli-utility-light;
+        }
+
+        &.selected {
+            border: 1px solid $eli-podium-blue;
+            background: $eli-podium-blue;
+        }
+
+    }
+}
+

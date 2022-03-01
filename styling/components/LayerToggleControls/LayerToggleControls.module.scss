@@ -1,0 +1,53 @@
+@import "styling/variables";
+
+.panelWrapper {
+  width: 100%;
+  border-top-left-radius: 0;
+
+  .headerWrapper {
+    padding: 0 24px;
+    min-width: 180px;
+  }
+
+  .options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+
+    .cell {
+      padding: 4px 0;
+      display: inline-flex;
+      align-items: center;
+      padding-left: 24px;
+    }
+
+    .togglecell {
+      @extend .cell;
+      justify-content: flex-end;
+      padding-right: 36px;
+    }
+  }
+
+  .firstRowInGroup {
+    .cell,
+    .togglecell {
+      border-top: 1px solid $eli-light-blue;
+      padding-top: 24px;
+      padding-bottom: 0;
+    }
+  }
+
+  .lastRowInGroup {
+    .cell,
+    .togglecell {
+      padding-bottom: 24px;
+    }
+  }
+
+  .lastRow {
+    .cell,
+    .togglecell {
+      padding-bottom: 0;
+    }
+  }
+}

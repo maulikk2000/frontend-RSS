@@ -1,0 +1,59 @@
+@import "../../../../styling/variables";
+
+
+.tabBanner {
+    width: 100%;
+    display: flex;
+    background: #fff;
+
+    .tab {
+        flex: 1;
+        text-align: center;
+        padding: 16px;
+        text-transform: capitalize;
+        border-bottom: 4px solid transparent;
+        font-size: 14px;
+        line-height: 18px;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &:hover {
+            border-bottom: 4px solid $eli-utility-light;
+        }
+
+        &.selected {
+            border-bottom: 4px solid $eli-podium-blue;
+        }
+    }
+}
+
+.tabContent {
+    flex: auto;
+    overflow-y: auto;
+    height: 100%;
+    .contentWrapper {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        max-height: 100%;
+        padding: 24px 17px 0;
+
+        .tabActions {
+            .buffer {
+                padding: 12px;
+            }
+        }
+    }
+}
+
+.towerOptionWrapper {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+
+    .plotHeader {
+        margin-right: 8px;
+    }
+}

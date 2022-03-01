@@ -1,0 +1,28 @@
+@import "styling/_variables";
+
+
+.subheader {
+  margin-top: 8px;
+  color: #777;
+}
+
+.summary_stepper {
+  flex: 1;
+}
+
+.flexExpand {
+  position: relative;
+  flex: 1 1;
+  overflow: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  &.padding {
+    padding-top: 30px;
+    padding-bottom: 30vh;
+  }
+
+  .scroll-to-div {
+    padding-top: 150px;
+  }
+}

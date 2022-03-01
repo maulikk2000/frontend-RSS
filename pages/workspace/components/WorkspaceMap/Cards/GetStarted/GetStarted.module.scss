@@ -1,0 +1,32 @@
+@import "../../../../../../styling/mixins";
+
+.card {
+    @include mapCard();
+
+    min-width: 235px;
+    position: relative;
+    width: 397px;
+
+    .heading {
+        margin-top: 0;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 24px 0 16px;
+    }
+
+    .btn {
+        margin-top: 24px;
+    }
+
+    .closeIcon {
+        position: absolute;
+        top: 24px;
+        right: 24px;
+        cursor: pointer;
+        z-index: 200;
+    }
+}

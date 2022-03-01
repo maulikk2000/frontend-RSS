@@ -1,0 +1,38 @@
+@import '../../variables';
+
+/*----------------------------------
+    Colour Circle Styles
+------------------------------------*/
+
+.colour_circle {
+    height: 153px;
+    width: fit-content;
+    text-align: center;
+    border: solid 3px #efefef;
+    border-radius: 50%;
+    background:white;
+    margin: 20px;
+    display: inline-block;
+    vertical-align: top;
+
+    .semi_circle_top {
+        width: 150px;
+        height: 75px;
+        border-top-left-radius: 300px;
+        border-top-right-radius: 300px;
+        margin-bottom: -10px;
+    }
+
+    small {
+        display:block;
+        font-size:10px;
+        line-height:14px;
+    }
+
+    i {
+        position:relative;
+        top: -20px;
+        bottom: -20px;
+        margin-bottom: 20px;
+    }
+}

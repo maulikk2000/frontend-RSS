@@ -1,0 +1,80 @@
+@import "styling/_variables";
+
+.radio_button {
+    label {
+        margin-left:0;
+        margin-right:0;
+        height: 35px;
+
+        & > span {
+            padding: 4px;
+
+            input {
+                border-radius: 50%;
+                width: 12.1px;
+                height: 12.1px;
+            }
+
+            &:last-child {
+                color: #222222;
+                font-size: 14px;
+                font-weight: normal;
+                height: 26px;
+                line-height: 20px;
+                padding-bottom: 5px;
+            }
+
+            &:hover {
+                // Important because it needs to override MUI CSS
+               background:unset !important;
+            }
+
+            &:hover >  span:first-child  {
+                background: $eli-podium-blue-hover !important;
+            }
+
+            & > span:first-child {
+                border-radius: 50%;
+                width: 12.1px;
+                height: 12.1px;
+            }
+        }
+    }
+
+    .MuiRadio-root {
+        color: $eli-podium-blue;
+    }
+
+    .sub_option {
+        // Important because it needs to override MUI CSS
+        margin-left: 30px !important;
+
+        label {
+            margin-left:0;
+            margin-right:0;
+            margin-bottom:10px;
+    
+            & > span:last-child {
+                font-size: 12px;
+            }
+        }
+    
+    }
+
+    .radio_item {
+        // Important because it needs to override MUI CSS
+        color: #23b4c3 !important;
+
+        svg {
+            width: 0.8em;
+            height: 0.8em;
+        }
+    }
+
+    &.disabled {
+        opacity:0.5;
+        .MuiRadio-root {
+            color: #222222;
+        }
+    }
+}

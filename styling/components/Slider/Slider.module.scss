@@ -1,0 +1,29 @@
+@import "styling/_variables";
+
+.number_input {
+    background: white;
+    max-width: 94px;
+    font-size: 15px;
+    float: right;
+    box-sizing: border-box;
+    border-radius: 4px;
+    line-height: 36px;
+    padding-left: 5px;
+    padding-right: 3px;
+    border: 2px solid #c0cdd9;
+    min-width: 94px;
+    text-align: center;
+
+    // &::-webkit-inner-spin-button {
+    //     opacity: 1;
+    //     -webkit-appearance: inner-spin-button !important;
+    //     position: absolute;
+    //     top: 0;
+    //     right: 0;
+    //     height: 100%;
+    //     cursor: pointer;
+    //     min-width: 50px;
+    //     width: 50px;
+    //     display: block;
+    // }
+}

@@ -1,0 +1,65 @@
+@import "styling/_variables";
+
+.wrapper {
+  display:flex;
+  background: $white;
+  z-index: 200;
+  &.borderLeft{
+    border-left: 1px solid $eli-utility-light;
+  }
+  &.borderRight{
+    border-right: 1px solid $eli-utility-light;
+  }
+  
+  .content {
+    flex-grow: 1;
+    align-self: stretch;
+    overflow-x: hidden;    
+    background: $white;
+    &.hideOverflow{
+      overflow: hidden;
+    }
+  }
+  
+  .resizeBar {
+    position: relative;
+    cursor: ew-resize;
+    width: 24px;
+    margin-left: -12px;
+    margin-right: -12px;
+    background: transparent;
+    display: flex;
+    z-index: 10;
+    align-items: center ;
+    align-content: center ;
+    justify-content: center;
+  }
+  
+  .iconWrapper{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid $eli-utility-light;
+    background-color: $white;
+    position:absolute;
+    top: 12px;
+    z-index: 20;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .icon{
+      &.pointRight{
+        transform: rotate(180deg);
+      }
+    }
+
+    &:hover{
+      background-color: $eli-podium-dark-teal;
+      .icon{
+        fill:$white;
+      }
+    }
+  }
+}

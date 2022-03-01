@@ -1,0 +1,76 @@
+@import "../../../styling/variables";
+
+.bg {
+    background-image: url("./LandingBackground.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+
+    .outer {
+        margin-left: auto;
+        height: 76%;
+        width: 88%;
+        max-width: 1200px;
+        background: $eli-podium-blue;
+        color: $white; //half width/half height
+        border-bottom-left-radius: 600px;
+        border-top-left-radius: 600px;
+        padding: 24px 24px 24px 12%;
+        display: inline-flex;
+        align-items: center;
+
+        .inner {
+            color: $white;
+            h1,
+            h2 {
+                color: $white;
+            }
+        }
+
+        @media only screen and (min-width: 1401px) {
+            .inner {
+
+                .logo {
+                    height: 149px;
+                } 
+
+                h1 {
+                    font-size: 36px;
+                    line-height: 36px;
+                    color: $white;
+                    margin-top: 48px;
+                    margin: 48px 0 24px 0;
+                }
+
+                h2 {
+                    font-size: 24px;
+                    line-height: 36px;
+                    margin-top: 36px;
+                    font-weight: 400;
+                }
+            }
+        }
+
+        @media only screen and (max-width: 1400px) {
+            .inner {
+                .logo {
+                    height: 99px;
+                } 
+                h1 {
+                    font-size: 24px;
+                    margin-top: 20px;
+                }
+                h2 {
+                    font-size: 16px;
+                    margin-top: 24px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}

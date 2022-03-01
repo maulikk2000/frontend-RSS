@@ -1,0 +1,22 @@
+@import "styling/_variables";
+
+.backButton {
+    font-family: "CircularStd-Medium", Arial, Verdana, Tahoma, sans-serif;
+    text-decoration: none;
+    color: $eli-podium-blue;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    position: relative;
+    left: -4px;//because of Mui icon
+
+   &:hover {
+        color: #19838c;
+
+        .icon {
+            path {
+                stroke: #19838c;
+            }
+        }
+    }
+}

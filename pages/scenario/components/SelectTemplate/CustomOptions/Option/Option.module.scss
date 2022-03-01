@@ -1,0 +1,85 @@
+@import "../../../../../../styling/variables";
+@import "../../../../../../styling/mixins";
+
+.option {
+    text-align: center;
+
+    label {
+        margin-top: 8px;
+        display: block;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: left;
+    }
+
+    .imageBox {
+        border: 2px solid $eli-utility-dark;
+        border-radius: 4px;
+        height: 100px;
+        width: 100px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px;
+
+        &:hover:not(.disabled) {
+            border: 2px solid $eli-podium-blue;
+            background: rgba($color: $eli-podium-blue, $alpha: 0.2);
+
+            .check {
+                path {
+                    fill: none;
+                }
+            }
+        }
+
+        .check {
+            border-radius: 50%;
+            height: 20px;
+            width: 20px;
+            position: absolute;
+            top: 4px;
+            right: 4px;
+            padding: 4px;
+        }
+
+        &.selected {
+            border: 2px solid $eli-podium-blue;
+
+            &:hover {
+                background: transparent;
+                .check {
+                    path {
+                        fill: white;
+                    }
+                }
+            }
+
+            .check {
+                background: $eli-podium-blue;
+                path {
+                    fill: white;
+                }
+            }
+        }
+
+        &.disabled {
+            border: 2px solid $eli-utility-light;
+            background: $eli-utility-light;
+            .check {
+                path {
+                    fill: $eli-utility-light;
+                }
+            }
+
+            svg {
+                path {
+                    fill: $eli-utility-dark;
+                }
+            }
+        }        
+    }
+}

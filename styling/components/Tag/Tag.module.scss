@@ -1,0 +1,103 @@
+@import "../../variables";
+
+.tag {
+    border-radius: 50px;
+    color: $eli-font-color;
+    text-transform: capitalize;
+    font-size: $eli-font-size-tag;
+    font-weight: 500;
+    width: 80px;
+    text-align: center;
+
+    &.pill {
+        width: auto;
+        min-width: 80px;
+        padding: 0 4px;
+    }
+}
+
+.baseline {
+    border: 2px solid $eli-utility-dark;
+    background: $white;
+}
+
+.completed {
+    border: 2px solid $eli-tag-color;
+    background: $eli-tag-color;
+}
+
+.Completed {
+    border: 2px solid $eli-tag-color;
+    background: $eli-tag-color;
+}
+.InProgress {
+    border: 2px solid $eli-tag-color2;
+    background: $eli-tag-color2;
+}
+
+.cancelled {
+    border: 2px solid $eli-tag-color3;
+    background: $eli-tag-color3;
+}
+
+.Cancelled {
+    border: 2px solid $eli-tag-color3;
+    background: $eli-tag-color3;
+}
+
+.new {
+    border: 2px solid $eli-podium-dark-teal;
+    background: $eli-podium-dark-teal;
+    color: $white;
+    font-size: 12px;    
+
+    &.pill {
+        width: auto;
+        min-width: auto;
+        max-width: 45px;
+        height: 20px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px 16px;
+    }
+}
+
+.dotWrapper {
+    display: flex;
+    align-items: center;
+
+    .tagName {
+        text-transform: capitalize;
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .dot {
+        width: 12px;
+        height: 12px;
+        margin-right: 8px;
+        margin-bottom: 1px;
+        display: inline-block;
+    }
+}
+
+.DraftMassing {
+    border: 2px solid $eli-tag-color-draft;
+    background: $eli-tag-color-draft;
+}
+
+.DesignRejected {
+    border: 2px solid $eli-tag-color-rejected;
+    background: $eli-tag-color-rejected;
+}
+
+.FloorplateGenerated {
+    border: 2px solid $eli-tag-color-solved;
+    background: $eli-tag-color-solved;
+}
+
+.NoStatus {
+    border: 2px solid $eli-tag-color-nostatus;
+    background: $eli-tag-color-nostatus;
+}

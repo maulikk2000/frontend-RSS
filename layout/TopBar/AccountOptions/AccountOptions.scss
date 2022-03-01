@@ -1,0 +1,39 @@
+@import "../../../styling/variables";
+
+#user-menu {
+    .MuiPaper-elevation8 {
+        box-shadow: none;
+    }
+
+    .MuiPaper-root {
+        margin-top: 16px;
+        padding-top: 8px;
+    }
+    .MuiPopover-paper {
+        background: transparent !important;
+        color: white;
+
+        &:before {
+            content: "";
+            position: absolute;
+            border-bottom: 8px solid $eli-black;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            top: 0px;
+            right: 20px;
+            z-index: 1004;
+        }
+
+        .MuiMenu-list {
+            overflow: visible;
+            background: $eli-black;
+            border-radius: 16px;
+
+            .MuiListItem-root {
+                &:hover {
+                    color: $eli-podium-blue;
+                }
+            }
+        }
+    }
+}

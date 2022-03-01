@@ -1,0 +1,49 @@
+.container {
+    border-radius: 4px;
+    background: #EFB919;
+    width: max-content;
+    vertical-align: middle;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    .inner {
+        font-size: 14px;
+        color: black;
+        height: 100%;
+
+        .labelHeader {
+            display: flex;
+            flex-direction: row;
+            vertical-align: middle;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            
+            .editButton {
+                border: none;
+                background: #EFB919;
+                float: right;
+            }
+
+            .editIcon {
+                outline: none;
+            }
+
+        }
+        .labelText {
+            text-align: center;
+        }
+
+        .inputField {
+            background: #EFB919;
+            border-top: none;
+            border-right: none;
+            border-bottom: none;
+            outline: none;
+        }
+
+        .submitButton {
+            outline: none;
+        }
+    }
+}

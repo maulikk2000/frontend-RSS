@@ -1,0 +1,26 @@
+
+.timeOfDay {  
+    span {
+      color: white;
+    }
+  
+    .toolModal {
+      display: inline-block;
+      vertical-align: middle;
+      position: fixed;
+      background: #1c252ce6;
+      bottom: 103px;
+      border-radius: 8px;
+      border: 1px solid #4b545b;
+  
+      &.slider {
+        padding: 20px;
+        padding-right: 25px;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-left: -115px;
+        width: 300px;
+      }
+    }
+  }
+  

@@ -1,0 +1,11 @@
+.modalDescription{
+    margin-bottom: 24px;
+    line-height: 18px;
+}
+
+.actionButtons {
+    display: flex;
+    button:first-child {
+        margin-right: 16px;
+    }
+}

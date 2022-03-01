@@ -1,0 +1,25 @@
+@import "styling/_variables";
+
+.settings_wrapper {
+  font-size: 14px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+
+  .settings_title {
+    width: 50%;
+    display: inline-block;
+  }
+
+  .settings_content {
+    width: 50%;
+    display: inline-block;
+    text-align: right;
+
+    input {
+      width: 100%;
+      border: solid 1px silver;
+      height: 24px;
+      border-radius: 2px;
+    }
+  }
+}

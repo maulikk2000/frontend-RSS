@@ -1,0 +1,20 @@
+.container {
+  position: absolute;
+  border-radius: 8px;
+  background: #1C252C;
+  left: 10px;
+  display: flex;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  width: max-content;
+  .inner {
+      margin: 1px;
+      font-size: 20px;
+      padding: 4px;
+      padding-left: 8px;
+      padding-right: 8px;
+      text-align: center;
+      color: white;
+  }
+}

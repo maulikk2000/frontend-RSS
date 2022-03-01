@@ -1,0 +1,26 @@
+.inherit { 
+  all: inherit;
+
+  &:hover {
+    .info {
+      display: block;
+    }
+  }
+}
+
+.info {
+  display: none;
+  position: absolute;
+  bottom: 114px;
+  width: 230px;
+  margin-left: -95px;
+  background: #000000b3;
+  padding: 8px;
+  border-radius: 4px;
+  white-space: break-spaces;
+  line-height: 24px;
+
+  &.static {
+    display: block;
+  }
+}

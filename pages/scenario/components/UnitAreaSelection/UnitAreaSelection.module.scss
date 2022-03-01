@@ -1,0 +1,47 @@
+.wrapper {
+    width: 100%;
+
+    .unavailable {
+        text-align: center;
+    }
+    
+    .optionWrapper {
+        width: 100%;
+
+        .buttonWrapper {
+            padding: 24px;
+            text-align: center;
+
+            .nextBtnLabel{
+                margin-right: 4px;
+            }
+        }
+
+        .slideOptionWrapper {
+            .unitMixRow {
+                display: flex;
+                align-items: flex-end;
+                gap: 12px;
+                padding-bottom: 12px;
+
+                .labelWrapper {
+                    width: 30%;
+                    display: flex;
+                    align-items: center;
+
+                    .bullet {
+                        display: inline-block;
+                        width: 12px;
+                        height: 12px;
+                        border-radius: 50%;
+                        margin: 6px 6px 6px 0;
+                    }
+                }
+
+                .sliderWrapper {
+                    flex: auto;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,34 @@
+@import "../../../../../../styling/mixins";
+
+.card {
+    @include mapCard();
+
+    h1 {
+        margin-bottom: 12px;
+    }
+
+    p {
+        margin-bottom: 24px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    position: absolute;
+    bottom: 150px;
+    width: 236px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+
+    .hasIcon {
+        padding-left: 12px;
+    }
+
+    .icon {
+        color: white;
+        path {
+            fill: #fff;
+        }
+    }
+}

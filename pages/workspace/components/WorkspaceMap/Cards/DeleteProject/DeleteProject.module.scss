@@ -1,0 +1,12 @@
+@import "../../../../../../styling/mixins";
+
+.card {
+    @include mapCard();
+
+    min-width: 235px;
+    position: relative;
+
+    @include mapCardHeading();    
+
+    @include mapCardBtnWrapper();
+}

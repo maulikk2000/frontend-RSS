@@ -1,0 +1,77 @@
+@import "styling/_variables";
+
+.sunSimulation {
+  .MuiInputBase-root.MuiInput-root.MuiInput-underline.MuiInputBase-formControl.MuiInput-formControl.MuiInputBase-adornedEnd {
+    width: 1px;
+    height: 1px;
+    border: 0;
+    padding: 0;
+  }
+
+  .MuiInputBase-root.MuiInput-root.MuiInput-underline.MuiInputBase-formControl.MuiInput-formControl.MuiInputBase-adornedEnd input {
+    width: 1px;
+    height: 1px;
+  }
+  .MuiGrid-justify-xs-space-around {
+    width: 28px;
+    height: 28px;
+  }
+
+  .MuiInputBase-root.MuiInput-root.MuiInput-underline.MuiInputBase-formControl.MuiInput-formControl.MuiInputBase-adornedEnd .MuiIconButton-root {
+    position: relative;
+    left: -39px;
+    bottom: 0px;
+    padding: 0;
+    width: 64px;
+    height: 51px;
+    align-items: flex-start;
+    padding-top: 8px;
+
+    span.MuiSlider-markLabel.MuiSlider-markLabelActive {
+      color: white;
+    }
+
+    svg {
+      width: 25px;
+      height: 25px;
+    }
+  }
+}
+
+.MuiPaper-root.MuiPopover-paper.MuiPaper-elevation8.MuiPaper-rounded {
+  & > .MuiPickersBasePicker-container {
+    background: #1c252ce6;
+    color: white;
+
+    .MuiPickersCalendarHeader-daysHeader {
+        .MuiPickersCalendarHeader-dayLabel {
+          color: #747D85;
+        }
+      }
+
+      .MuiPickersSlideTransition-transitionContainer.MuiPickersCalendar-transitionContainer {
+        .MuiPickersCalendar-week {
+          button.MuiPickersDay-day {
+            color: white;
+
+            &.MuiPickersDay-daySelected {
+              border: solid 1px $eli-podium-blue;
+              background: none;
+            }
+
+            &:hover {
+              background-color: $eli-podium-blue;
+              color: #232E37;
+            }
+          }
+        }
+      }
+
+      .MuiPickersCalendarHeader-switchHeader {
+        button.MuiPickersCalendarHeader-iconButton {
+          background: transparent;
+          color: white;
+        }
+      }
+  }
+}

@@ -1,0 +1,35 @@
+@import "styling/_variables";
+
+.buttons {
+    &.first {
+        float: right;
+        cursor: pointer;
+        padding-right: 5px;
+    }
+
+    &.second {
+        background: rgba(255,255,255,0.2);
+        padding-left: 5px;
+    }
+
+    &.cancel {
+        position: absolute;
+        right: 15px;
+        top:0;
+        z-index: 10003;
+        color: white;
+    }
+}
+
+.error {
+    padding: 4px;
+    margin-bottom: 12px;
+    margin-top: 12px;
+    background: rgba(255, 255, 255, 0.2);
+    text-align: center;
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+}

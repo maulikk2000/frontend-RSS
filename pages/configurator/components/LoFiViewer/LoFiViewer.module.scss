@@ -1,0 +1,17 @@
+.lofi_viewer {
+    display: flex;
+    flex: auto;
+    height: 100%;
+    position: relative;
+  }
+
+  .lofi_canvas {
+    canvas {
+      background-color: grey;
+      outline: none;
+      position: absolute; // required to make canvas resize behave when shrinking
+      overflow: hidden;
+      height: 100%;
+      width: 100%;
+    }
+  }

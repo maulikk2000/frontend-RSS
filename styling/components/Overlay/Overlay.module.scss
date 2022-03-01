@@ -1,0 +1,14 @@
+@import "../../variables";
+
+.overlay {
+    height: 100vh;
+    width: 100vw;
+    background: rgba($color: $eli-black, $alpha: 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2147483002; //yes..had to, becuse the chat sets its z-index to 2147483001 ಠ_ಠ
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,52 @@
+.contentItem {
+    &:not(:first-child) {
+        margin-top: 20px;
+    }
+    
+    .layerTitleAndToggle {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .heading {
+            margin: 0;
+        }
+    }
+
+    .layerIconNameAndValue {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 10px;
+
+        p {
+            margin: 0;
+        }
+
+        .layerIcon {
+            margin-right: 5px;
+            height: 25px;
+        }
+        
+        .layerValue {
+            margin-left: auto;
+            margin-right: 10px;
+        }
+    }
+
+    .layerLink {
+        margin-left: 30px;
+        margin-bottom: 5px;
+        font-size: smaller;
+    }
+}    
+
+.tAndC {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: smaller;
+    width: 250px;
+}
+

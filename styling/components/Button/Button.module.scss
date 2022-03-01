@@ -1,0 +1,152 @@
+@import "styling/_variables";
+
+// DESIGN GUIDELINES BUTTONS
+@import "../../variables";
+
+@mixin ctaBaseButton {
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    outline: none;
+    cursor: pointer;
+    letter-spacing: 0.02em;
+    color: $eli-navy;
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+}
+
+@mixin ctaFullButton {
+    border-radius: 100px;
+    padding: 8px 24px;
+    max-height: 40px;
+}
+
+@mixin ctaButtonHover {
+    background: radial-gradient(58.33% 223.63% at 80.39% 50%, $eli-podium-blue 0%, $eli-podium-blue 0.01%, $eli-podium-dark-teal 99.99%, $eli-podium-dark-teal 100%);
+}
+
+@mixin ctaButtonDisabled {
+    background: $eli-utility-dark;
+    color: $white;
+
+    &:hover {
+        cursor: default;
+    }
+}
+
+@mixin ctaText {
+    @include ctaBaseButton;
+
+    border: none;
+    border-bottom: 2px solid $eli-podium-blue;
+    background: transparent;
+    padding: 0px 0 4px 0;
+    align-items: flex-end;
+
+    &:hover {
+        border-bottom: 2px solid $eli-podium-yellow;
+    }
+}
+
+.primary {
+    @include ctaBaseButton;
+    @include ctaFullButton;
+
+    color: $white;
+    background: $eli-podium-dark-teal;
+
+    &:hover {
+        @include ctaButtonHover();
+    }
+
+    &:disabled {
+        @include ctaButtonDisabled;
+    }
+
+    &:active {
+        background: $eli-podium-blue;
+    }
+}
+
+.secondary {
+    @include ctaBaseButton();
+    @include ctaFullButton();
+
+    background: transparent;
+    color: $eli-podium-dark-teal;
+    border: 1px solid $eli-podium-dark-teal;
+
+    svg {
+        path {
+            fill: $eli-podium-dark-teal;
+        }
+    }
+
+    &:hover {
+        background: rgba(25, 131, 140, 0.1);
+    }
+
+    &:disabled {
+        opacity: 0.3;
+    }
+}
+
+.text {
+    @include ctaText;
+}
+
+.textIcon {
+    @include ctaText();
+    line-height: 1em;
+}
+
+@mixin iconBase {
+    height: 35px;
+    width: 35px;
+    max-width: 35px;
+    border-radius: 50%;
+    display: inline-flex;
+    padding: 0;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    outline: none;
+    background: $eli-podium-dark-teal;
+    border: 2px solid $eli-podium-dark-teal;
+    margin-left: 4px;
+}
+
+.icon {
+    height: 35px;
+    width: 35px;
+    max-width: 35px;
+    border-radius: 50%;
+    display: inline-flex;
+    padding: 0;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    outline: none;
+    background: $eli-podium-dark-teal;
+    border: 2px solid $eli-podium-dark-teal;
+
+    &:hover {
+        @include ctaButtonHover();
+    }
+
+    &:disabled {
+        @include ctaButtonDisabled();
+    }
+}
+
+.icon_transparent {
+    @include iconBase();
+
+    background: transparent;
+    border: 2px solid transparent;
+}

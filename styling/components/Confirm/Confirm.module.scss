@@ -1,0 +1,22 @@
+@import "../../mixins";
+
+.confirmBox {
+    @include mapCard();
+
+    max-width: 30%;
+    min-width: 400px;
+    position: relative;
+
+    .buttonWrapper {
+        display: inline-flex;
+        gap: 8px;
+    }
+
+    .close {
+        float: right;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

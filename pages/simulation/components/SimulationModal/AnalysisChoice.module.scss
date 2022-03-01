@@ -1,0 +1,51 @@
+@import "../../../../styling/variables";
+
+.root {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  box-shadow: 0px 20px 100px rgba(28, 37, 44, 0.05);
+  gap: 24px;
+  padding: 16px;
+  margin: 0 0 12px;
+  border-radius: 8px;
+  align-items: flex-start;
+  border: 1px solid transparent;
+
+  .icon {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .content {
+    flex-grow: 1;
+    margin-top: auto;
+    margin-bottom: auto;
+    align-items: flex-start;
+    user-select: none;
+  }
+
+  .caption {
+      font-size: 12px;
+      line-height: 14px;
+      color: #72818D;
+  }
+
+  .checkbox {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  &:hover {
+    border: 1px solid $eli-podium-blue;
+
+    .checkbox {
+        div:first-child {
+            & > span {
+                // Important because it needs to override MUI CSS
+                background: $eli-podium-blue-hover !important;
+            }
+        }
+    }
+  }
+}

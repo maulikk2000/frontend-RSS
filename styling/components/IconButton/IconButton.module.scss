@@ -1,0 +1,33 @@
+@import "../../variables";
+
+.iconButton {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    
+    button {
+        cursor: pointer;
+        border: none;
+        background-color: white;
+        border-radius: 8px;
+        width: 100%;
+
+        &:focus {
+            outline: none;
+        }
+
+        p {
+            margin: 0;
+            line-height: 130%;
+        }
+
+        svg {
+            width: 24px;
+            height: 24px;
+            path {
+                fill: $eli-podium-blue !important;
+            }
+            margin-bottom: 5px;
+        }
+    }
+}

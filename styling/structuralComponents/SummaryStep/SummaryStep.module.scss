@@ -1,0 +1,65 @@
+@import "styling/_variables";
+
+.summary_step {
+    margin-bottom: 5px;
+
+    .step_title {
+      font-size:16px;
+      font-weight: 900;
+
+      span {
+        svg {
+          margin-left:8px;
+        }
+      }
+
+      &:hover {
+        cursor: pointer;
+        color: $eli-podium-blue;
+      }
+
+      &:hover .step_number {
+          color:unset;
+      } 
+    }
+
+    .step_number {
+      border-radius: 50%;
+      border: 1.5px solid rgb(192, 205, 217);
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      text-align: center;
+      margin-right: 9px;
+      line-height: 20px;
+      box-sizing: unset;
+      font-size: 14px;
+      font-weight: normal;
+      
+    }
+
+    .step_content {
+      border-left: 1.5px solid #c0cdd9;
+      margin-top: 5px;
+      margin-left: 11px;
+      padding-bottom: 19px;
+      padding-left: 20px;
+      padding-right: 8px;
+    }
+
+    .MuiStepContent-root {
+      border-left: 1.5px solid rgb(192, 205, 217);
+      margin-top: 5px;
+      margin-left: 11px;
+      padding-bottom: 25px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+
+      .MuiStepContent-root {
+        border-left: 0;
+        padding-bottom: 0;
+      }
+    }
+  }

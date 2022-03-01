@@ -1,0 +1,54 @@
+@mixin card {
+    border-radius: 8px;
+    background: #fff;
+    padding: 16px;
+}
+
+.WindResultsWrapper {
+    width: 488px;
+    padding: 0 24px 24px;
+
+    .showAll {
+        @include card();
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        margin-bottom: 12px;
+        padding-right: 32px;
+
+        h2 {
+            margin-bottom: 0;
+        }
+    }
+
+    .viewOptions {
+        @include card();
+
+        .radioRowWrapper {
+            display: grid;
+            gap: 12px;
+            grid-template-columns: 5fr 2fr 2fr 1fr;
+
+            & > div {
+                display: inline-flex;
+                align-items: center;
+                justify-content: flex-end;
+            }
+
+            & > div:first-child {
+                justify-content: flex-start;
+            }
+
+            .header {
+                .colourCode {
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 50%;
+                    display: inline-block;
+                    margin: 4px 12px 0;
+                }
+            }
+        }
+    }
+}

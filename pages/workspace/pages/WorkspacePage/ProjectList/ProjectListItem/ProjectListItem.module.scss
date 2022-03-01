@@ -1,0 +1,82 @@
+@import "../../../../../../styling/variables";
+
+.listItem {
+    display: flex;
+    justify-content: space-between;
+    background: $white;
+    gap: 24px;
+    padding: 16px;
+    margin: 0 0 24px;
+    border-radius: 8px;
+    align-items: center;
+    border: 1px solid transparent;
+    cursor: pointer;
+
+    .title {
+        width: fit-content;
+        height: fit-content;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        display: inline-flex;
+        gap: 12px;
+        align-items: center;
+    }
+
+    &:hover {
+        border: 1px solid $eli-podium-dark-teal;
+
+        h2 {
+            color: $eli-podium-dark-teal;
+        }
+    }
+
+    .moreMenu {
+        cursor: pointer;
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        .kebab {
+            padding: 0;
+
+            &:hover,
+            &.active {
+                path {
+                    fill: $eli-podium-dark-teal;
+                }
+            }
+        }
+
+        .optionList {
+            position: absolute;
+            top: calc(100% - 6px);
+            right: calc(100% - 12px);
+            z-index: 200;
+            list-style: none;
+            background: white;
+            pointer-events: initial;
+            padding: 16px;
+            margin: 0;
+            background: #ffffff;
+            border: 1px solid #e6ebf0;
+            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 16px;
+            width: 172px;
+
+            li {
+                width: 100%;
+                padding: 8px;
+                border-bottom: 1px solid $eli-light-blue;
+
+                &:hover {
+                    color: $eli-podium-dark-teal;
+                }
+            }
+
+            li:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+}

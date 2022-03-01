@@ -1,0 +1,23 @@
+@import "../../styling/variables";
+
+.TopBar {
+    display: flex;
+    align-items: center;
+    flex: auto;
+    padding: 8px 24px 8px 0;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+    background: $eli-black;
+    color: $white;
+}
+
+.statBar {
+    padding: 0px 24px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    flex: auto;
+  }

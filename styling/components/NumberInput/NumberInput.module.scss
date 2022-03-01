@@ -1,0 +1,160 @@
+@import "styling/_variables";
+
+
+.wrapper {
+    display: flex;
+
+    &.no_metric {
+        input {
+            padding-left: 17px !important;        
+        }
+    }
+
+    .number_input {
+        background: white;
+        font-size: 15px;
+        float: right;
+        box-sizing: border-box;
+        border-radius: 4px 0 0 4px;
+        line-height: 36px;
+        padding-left: 5px;
+        padding-right: 8px;
+        border: 2px solid #c0cdd9;
+        border-right: 1px solid #c0cdd9;
+        text-align: center;
+        font-weight: 500;
+
+        &.standard {
+            min-width: 49px;
+            max-width: 49px;
+            margin-left: 4px;
+            padding-left: 12px;
+            padding-right: 0px;
+        }
+
+        &.small {
+            min-width: 45px;
+            max-width: 45px;
+            margin-left: 5px;
+
+            &.metric {
+                left:-60px;
+            }
+        }
+
+        &.medium {
+            max-width: 84px;
+            min-width: 84px;
+        }
+
+        &.large {
+            min-width: 100%;
+            max-width: 100%;
+        }
+
+        &:focus {
+            outline: none;
+            border: 2px solid black;
+            border-right: 1px solid black;
+            border-radius: 4px 0 0 4px;
+        }
+
+        &:focus+.button_container .incrementer,
+        &:focus+.button_container .decrementer {
+            outline: none;
+            border: 2px solid black;
+            border-left: none;
+        }
+
+        &:focus+.button_container .incrementer {
+            border-bottom: none;
+        }
+
+        &:focus+.button_container .decrementer {
+            border-top: none;
+        }
+
+        // Hides Arrows from Number Fields
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin-right: 10px;
+        }
+    }
+
+    .metric {
+        position: relative;
+        left:-65px;
+        top: 13px;
+        font-size: 15px;
+        font-weight: 500;
+        margin-right: -10px;
+        width: 10px;
+        min-width: 10px;
+        max-width: 10px;
+
+        &.small {
+            left: -60px;
+        }
+    }
+
+    .button_container {
+        position: relative;
+
+        button {
+            display: block;
+            background: none;
+            border: 2px solid #c0cdd9;
+            text-align: center;
+            border-left: none;
+            width: 42px;
+            height: 21px;
+            cursor: pointer;
+
+            &:disabled {
+                &:hover svg {
+                    color: unset;
+                }
+
+                &:hover {
+                    cursor: unset;
+                }
+            }
+
+            .icon {
+                position: relative;
+                font-size: 26px;
+            }
+
+            &:focus {
+                outline: none;
+            }
+
+            &:hover svg {
+                color: $eli-podium-blue;
+            }
+        }
+
+        .incrementer {
+            border-radius: 0 4px 0 0;
+            border-bottom: none;
+            background:white;
+
+            .icon {
+                top: -3px;
+            }
+        }
+
+        .decrementer {
+            border-radius: 0 0 4px 0;
+            border-top: none;
+            background:white;
+
+            .icon {
+                top: -5px;
+            }
+        }
+    }
+}
+
+

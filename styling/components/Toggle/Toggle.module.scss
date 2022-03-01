@@ -1,0 +1,60 @@
+@import "styling/_variables";
+
+.toggle {
+  display: inline-flex;
+  z-index: 0;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  vertical-align: middle;
+  width: 40px;
+  height: 24px;
+  padding: 7px;
+
+  .MuiSwitch-root .Mui-checked .MuiSwitch-thumb {
+    color: $eli-podium-blue;
+  }
+
+  .MuiSwitch-root .MuiSwitch-colorSecondary.Mui-checked + .MuiSwitch-track {
+    background-color: #a7e1e7;
+  }
+
+  .MuiSwitch-colorSecondary.Mui-checked:hover {
+    background-color: #23b4c314;
+  }
+
+  .MuiSwitch-root .MuiSwitch-colorSecondary + .MuiSwitch-track {
+    background-color: #c0cdd9;
+    opacity: 1;
+  }
+
+  .Mui-disabled {
+    color: silver;
+  }
+}
+
+.toggle_form {
+  font-size: 14px;
+  padding: 0;
+
+  .toggle_left {
+    width: 50%;
+    display: inline-block;
+  }
+
+  .toggle_right {
+    width: 50%;
+    text-align: right;
+    display: inline-block;
+  }
+
+  .toggle_left_inactive {
+    width: 50%;
+    display: inline-block;
+  }
+}
+
+._disabled {
+  color: silver;
+}
